@@ -79,6 +79,21 @@ body:has(.card[data-color="green"]:hover) {
   }
 }
 
+@layer components {
+  .loader {
+    @apply w-[50px] aspect-square rounded-full bg-[#514b82];
+    -webkit-mask: radial-gradient(circle closest-side at 50% 40%, #0000 94%, #000);
+    transform-origin: 50% 40%;
+    animation: spin-loader 1s linear infinite;
+  }
+}
+
+@keyframes spin-loader {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
   backdrop-filter: blur(10px);
@@ -157,11 +172,11 @@ body:has(.card[data-color="green"]:hover) {
   overflow: hidden;
 }
 
-.block-container:hover > .btn-back {
+.block-container:hover>.btn-back {
   transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
 }
 
-.block-container:hover > .btn-front {
+.block-container:hover>.btn-front {
   transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
 }
 
