@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { socialLinks } from "../constants/index";
+import { socialLinks } from "../Constants/index";
 
 const Footer = () => {
   return (
