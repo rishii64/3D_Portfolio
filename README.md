@@ -1,9 +1,12 @@
+# Development Branch
+  Trying new changes here --> merging to main branch.
+
+
 # 🌐 My Portfolio Website
 
 Welcome to my personal portfolio website! 🚀  
 This site showcases my skills, projects, experience, and everything about my journey as a developer.
 
-![Portfolio Screenshot](./assets/images/screenshot.png)
 
 ## 🔗 Live Website
 
